@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main MCGG - Portal Turnamen</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #6366f1;
+            --text: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            background: var(--card);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border: 1px solid #334155;
+        }
+        h1 { margin-bottom: 10px; color: var(--accent); font-size: 2.5em; font-weight: 900; letter-spacing: 2px; }
+        p { color: #94a3b8; margin-bottom: 40px; }
+        
+        .menu-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .menu-btn {
+            display: block;
+            padding: 25px;
+            text-decoration: none;
+            color: white;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Tombol Solo Rank (Ungu) */
+        .btn-solo {
+            background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+        }
+        
+        /* Tombol Magic Chess (Merah/Pink) */
+        .btn-tourney {
+            background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+            box-shadow: 0 4px 15px rgba(225, 29, 72, 0.3);
+        }
+
+        .menu-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            filter: brightness(1.1);
+        }
+
+        .btn-icon { font-size: 1.5em; display: block; margin-bottom: 5px; }
+        .btn-desc { font-size: 0.7em; font-weight: normal; opacity: 0.9; margin-top: 5px; display: block; }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>MAIN MCGG.ID</h1>
+    <p>Portal Turnamen & Kalkulator Skor</p>
+
+    <div class="menu-grid">
+        <a href="solo.html" class="menu-btn btn-solo">
+            <span class="btn-icon">🏆</span>
+            MGCC SOLO TOURNAMENT
+            <span class="btn-desc">Sistem Poin Multiplier Berdasarkan Tier</span>
+        </a>
+
+        <a href="turnamen.html" class="menu-btn btn-tourney">
+            <span class="btn-icon">♟️</span>
+            MAGIC CHESS TOURNAMENT
+            <span class="btn-desc">Sistem Poin Klasik (+7, +5, ... -6)</span>
+        </a>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Main MCGG ID - Live System
+    </div>
+</div>
+
+</body>
+</html>
